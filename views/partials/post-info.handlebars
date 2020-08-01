@@ -1,0 +1,21 @@
+<article>
+    <div class="row border border-dark rounded-top bg-info">
+        <div class="col-12 d-flex justify-content-center border-bottom border-dark">
+            <h2>
+                <a href="/post/{{id}}">{{title}}</a>
+            </h2>
+        </div>
+        <div class="col-12 p-3 bg-light">
+            <p class="font-weight-bold">
+                {{post_content}}
+            </p>
+        </div>
+    </div>
+    <div class="row border border-dark">
+        <div class="col-12 font-weight-bold p-2 bg-info">
+            By {{user.username}} on {{format_date created_at}}
+            |
+            <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
+    </div>
+</article>
