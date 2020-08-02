@@ -12,13 +12,13 @@
 
 <body>
   <div class="container">
-    <header class="row mb-5">
-      <div class="col-12 col-md-6 d-flex justify-content-start">
+    <header class="row mt-3 mb-3 border-bottom border-dark">
+      <div class="col-12 col-md-6 justify-content-start align-items-end">
         <h1 class="font-weight-bold">
           <a href="/">The Tech Blog</a>
         </h1>
       </div>
-      <div class="col-12 col-md-6 d-flex justify-content-around align-items-center">
+      <div class="col-12 col-md-6 d-flex justify-content-end align-items-end">
         <nav>
           {{#if loggedIn}}
           <button type="button" class="btn btn-primary">
@@ -26,7 +26,9 @@
           </button>
           <button id="logout" class="btn btn-primary">Log Out</button>
           {{else}}
-          <a href="/login">Log In</a>
+          <button class="btn btn-primary">
+            <a href="/login">Log In</a>
+          </button>
           {{/if}}
         </nav>
       </div>
@@ -34,6 +36,13 @@
     <main>
       {{{ body }}}
     </main>
+    <footer>
+      <div class="row mt-5">
+        <div class="col-12 d-flex justify-content-center">
+      <p class="font-weight-bold">&copy; Taylor Remigi 2020</p>
+        </div>
+      </div>
+    </footer>
   </div>
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>

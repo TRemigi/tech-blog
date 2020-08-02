@@ -1,12 +1,11 @@
 {{> post-info post }}
 {{#if loggedIn}}
-<form class="comment-form">
+<form id="comment-form" class="mt-4">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea type="text" name="comment-body" class="form-control input-lg mb-1 border border-dark rounded" rows="5"></textarea>
   </div>
-
   <div>
-    <button type="submit">Add Comment</button>
+    <button type="submit" class="btn btn-primary">Add Comment</button>
   </div>
 </form>
 {{/if}}

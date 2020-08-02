@@ -11,3 +11,7 @@ a:hover {
 body {
     background-color: cadetblue;
 }
+
+.text-wrap {
+    word-break: break-all;
+}

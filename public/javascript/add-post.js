@@ -7,8 +7,8 @@ async function newFormHandler(event) {
     const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({
-            title,
-            post_content
+            title: title,
+            post_content: post_content
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -22,4 +22,4 @@ async function newFormHandler(event) {
     }
 }
 
-document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+document.querySelector('#new-post-form').addEventListener('submit', newFormHandler);
