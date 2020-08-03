@@ -1,5 +1,5 @@
 # The Tech Blog ![ISC Badge](https://img.shields.io/badge/License-ISC-brightgreen)
-(\assets\images\techblog.png)
+(public\assets\images\techblog.png)
 
 ## Description
 
