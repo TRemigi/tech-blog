@@ -1,5 +1,5 @@
 # The Tech Blog ![ISC Badge](https://img.shields.io/badge/License-ISC-brightgreen)
-[![Screenshot of Tech Blog Homepage](./public/assets/images/techblog.png)(https://tremigi-tech-blog.herokuapp.com/)
+![Screenshot of Tech Blog Homepage](./public/assets/images/techblog.png)(https://tremigi-tech-blog.herokuapp.com/)
 
 ## Description
 
